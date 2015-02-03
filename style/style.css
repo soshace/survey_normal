@@ -1,0 +1,87 @@
+@import url(../fonts/open_sans/stylesheet.css);
+@import url(../fonts/open_sans_bold/stylesheet.css);
+@import url(../fonts/open_sans_light/stylesheet.css);
+
+body {
+  background: url(../img/page-background.png) repeat-x top #f1f9ff;
+  font-family: Open Sans, sans-serif;
+}
+
+#root-container {
+  width: 940px;
+  margin: 86px auto 0 auto;
+}
+
+#root-container > header {
+  background: #2274a5;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  color: #5499c2;
+  padding: 20px;
+}
+
+#root-container > header > .subtitle {
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+#root-container > header > .sitename {
+  font-size: 18px;
+  color: #fff;
+}
+
+#root-container > header > .date {
+  font-size: 10px;
+  float: right;
+  margin-top: 8px; /* 18px - 10px */
+}
+
+#root-container > main {
+  background: #fff;
+  padding: 100px 80px;
+}
+
+#root-container > main p {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 36px 0;
+}
+
+#root-container > main > article#invitation {
+  
+}
+
+#root-container > main > article#invitation > #alice-boyle-photo {
+  float: left;
+  margin: -50px 40px -30px 0;
+}
+
+#root-container > main > article#invitation:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+root-container > main > article#invitation a.button {
+  margin-top: 10px;
+}
+
+a.button {
+  display: inline-block;
+  font-size: 24px;
+  padding: 15px 25px;
+  color: #fff;
+  background: #ffa100 linear-gradient(to bottom, #ffab00 0%, #ff9000 100%);
+  border-radius: 4px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0 2px #ea7500;
+  box-shadow: 0 3px #e4e4e4;
+}
+
+a.button > .sub {
+  font-size: 14px;
+  text-transform: none;
+}
