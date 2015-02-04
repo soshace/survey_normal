@@ -127,7 +127,7 @@ main > section#done > #loading-bar > #loading-bar-line {
 
 main > #rewards {
   text-align: center;
-  margin-top: -70px; /* This page has unusual smaller margin */
+  margin: -70px 0 -40px 0; /* This page has unusual smaller margins */
 }
 
 main > #rewards > header {
