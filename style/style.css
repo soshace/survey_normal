@@ -160,16 +160,16 @@ main > #rewards > ul > li {
 main > #rewards > ul > li > .items-left {
   position: absolute;
   width: 36px;
-  height: 36px;
+  height: 37px;
   left: 178px;
-  top: -14px;
-  border: 1px solid #f00;
+  top: -12px;
   text-align: center;
   padding: 12px;
   display: inline-block;
   color: #fff;
   font-size: 14px;
   line-height: 18px;
+  background: url(../img/sticker-n-left.png);
 }
 
 main > #rewards > ul > li > .items-left > .count {
