@@ -51,13 +51,13 @@ body {
 
 #root-container > main {
   background: #fff;
-  padding: 100px 80px;
+  padding: 70px 75px;
 }
 
 #root-container > main p {
   font-size: 14px;
   line-height: 24px;
-  margin: 36px 0;
+  margin: 30px 0;
 }
 
 #root-container > main > article#invitation {
@@ -66,7 +66,7 @@ body {
 
 #root-container > main > article#invitation > #alice-boyle-photo {
   float: left;
-  margin: -50px 40px -30px 0;
+  margin: -50px 35px 0 -15px;
 }
 
 #root-container > main > article#invitation:after {
@@ -75,14 +75,14 @@ body {
   clear: both;
 }
 
-root-container > main > article#invitation a.button {
-  margin-top: 10px;
+#root-container > main > article#invitation > a.button {
+  margin-top: 8px;
 }
 
 a.button {
   display: inline-block;
   font-size: 24px;
-  padding: 15px 25px;
+  padding: 10px 34px;
   color: #fff;
   background: #ffa100 linear-gradient(to bottom, #ffab00 0%, #ff9000 100%);
   border-radius: 4px;
