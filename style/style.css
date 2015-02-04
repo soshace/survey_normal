@@ -178,6 +178,74 @@ main > #rewards > ul > li > .items-left > .count {
   font-weight: bold;
 }
 
+main > #rewards > ul > li > .brand {
+  font-size: 14px;
+  font-weight bold;
+  color: #2274a5;
+  margin: 4px 0 0 0;
+}
+
+main > #rewards > ul > li > .title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #000;
+}
+
+main > #rewards > ul > li > .promo-code {
+  font-size: 14px;
+  color: #b7b7b7;
+  margin: 6px 0 1px 0;
+}
+
+main > #rewards > ul > li > .promo-code > i {
+  color: #000;
+  font-style: normal;
+}
+
+main > #rewards > ul > li > ul.prices {
+  overflow-x: hidden;
+  list-style: none;
+  text-align: left;
+  font-size: 14px;
+  color: #b7b7b7;
+  line-height: 24px;
+  padding: 0;
+  margin: 0 0 18px 0;
+}
+
+main > #rewards > ul > li > ul.prices > li:before {
+  float: left;
+  width: 0;
+  white-space: nowrap;
+  content:
+  "........................................"
+  "........................................"
+}
+
+main > #rewards > ul > li > ul.prices > li > span:first-child {
+  padding-right: 1px;
+  background: #fff;
+}
+
+main > #rewards > ul > li > ul.prices > li > span + span {
+  float: right;
+  padding-left: 2px;
+  background: #fff;
+  font-weight: bold;
+}
+
+main > #rewards > ul > li > ul.prices > li.regular-price > span + span {
+  color: #bdbdbd;
+}
+
+main > #rewards > ul > li > ul.prices > li.your-price > span + span {
+  color: #f43030;
+}
+
+main > #rewards > ul > li > ul.prices > li.shipping > span + span {
+  color: #071721;
+}
+
 a.button {
   display: inline-block;
   font-size: 24px;
@@ -201,4 +269,5 @@ a.button > .sub {
 a.smaller-button {
   text-transform: none;
   font-size: 18px;
+  padding: 13px 20px;
 }
