@@ -268,6 +268,22 @@ main > #rewards > ul > li > ul.prices > li.shipping > span + span {
   font-size: 18px;
   font-weight: bold;
   color: #fff;
+  float: left;
+}
+
+#invitation-popup > header > .close {
+  float: right;
+  font-size: 32px;
+  line-height: 24px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#invitation-popup > header:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 #invitation-popup > section {
