@@ -79,6 +79,11 @@ body {
   margin-top: 8px;
 }
 
+#root-container > #comments-container {
+  background: #fff;
+  text-align: center;
+}
+
 a.button {
   display: inline-block;
   font-size: 24px;
