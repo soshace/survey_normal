@@ -26,5 +26,10 @@ $(function() {
     var interval = setInterval(next, 100);
   }
 
-  run_animation(function(){console.log("End")});
+  // Start animation sequence if 'loading-bar' exists on page
+  if ($('#loading-bar').length) {
+    run_animation(function(){
+      location.href = "presents_page.html";
+    });
+  }
 });
