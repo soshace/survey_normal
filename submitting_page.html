@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>User survey</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+
+<body>
+  <!-- facebook -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <!-- end facebook -->
+
+  <div id="devdevdev-reference"></div>
+
+  <div id="root-container">
+    <header>
+      <div class="subtitle">User Survey</div>
+      <time class="date" datetime="2014-11-10">Monday, November 10, 2014</time>
+      <div class="sitename">Longwebsitename.com</div>
+    </header>
+
+    <main>
+      <section id="done">
+      <header>
+        That's it, all done! Thank you for your participation.
+      </header>
+      <p>As we submit the answers to your questions, we are checking our
+         in-stock inventory to see which rewards are available as a way of
+         saying thank you for answering our survey questions.</p>
+
+      <div id="loading-bar">
+      </div>
+    </main>
+
+    <div id="comments-container">
+      <!-- facebook -->
+      <div class="fb-comments" data-href="http://example.com/" data-width="800" data-numposts="10" data-colorscheme="light"></div>
+      <!-- end facebook -->
+    </div>
+  </div>
+</body>
+
+</html>
