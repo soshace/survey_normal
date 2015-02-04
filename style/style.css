@@ -2,6 +2,18 @@
 @import url(../fonts/open_sans_bold/stylesheet.css);
 @import url(../fonts/open_sans_light/stylesheet.css);
 
+#devdevdev-reference {
+  background: url(../img/reference.png) center top no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  -webkit-filter: grayscale(100%) invert();
+}
+
 body {
   background: url(../img/page-background.png) repeat-x top #f1f9ff;
   font-family: Open Sans, sans-serif;
@@ -49,7 +61,7 @@ body {
 }
 
 #root-container > main > article#invitation {
-  
+
 }
 
 #root-container > main > article#invitation > #alice-boyle-photo {
