@@ -82,7 +82,7 @@ body {
 #root-container > #comments-container {
   background: #fff linear-gradient(to bottom, #f0f0f0 0%, #fff 45px);
   text-align: center;
-  padding-top: 45px;
+  padding: 45px 0;
 }
 
 a.button {
