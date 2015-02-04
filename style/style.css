@@ -17,7 +17,7 @@ body {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   color: #5499c2;
-  padding: 20px;
+  padding: 16px 20px 13px 20px;
 }
 
 #root-container > header > .subtitle {
@@ -28,6 +28,7 @@ body {
 #root-container > header > .sitename {
   font-size: 18px;
   color: #fff;
+  line-height: 28px;
 }
 
 #root-container > header > .date {
