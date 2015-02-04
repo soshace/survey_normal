@@ -118,6 +118,13 @@ main > section#done > #loading-bar > ul > li.enabled {
   color: #000;
 }
 
+main > section#done > #loading-bar > #loading-bar-line {
+  background: url(../img/loading-bar-sprites.png) no-repeat;
+  width: 508px;
+  height: 31px;
+  display: inline-block;
+}
+
 a.button {
   display: inline-block;
   font-size: 24px;
