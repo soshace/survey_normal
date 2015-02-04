@@ -1,9 +1,11 @@
 $(function() {
+  // Set active frame of loading bar
   var set_active_frame = function(frame) {
     var y_offset = frame * -31;
     $("#loading-bar-line").css("background-position", "0 " + y_offset + "px");
   }
 
+  // Run loading bar animation, firing callback when finished
   var run_animation = function(end_callback) {
     var frame = 0;
     var last_frame = 20;
