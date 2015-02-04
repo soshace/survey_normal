@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>User survey</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="style/style.css" />
+  <script src="js/jquery-2.1.3.min.js"></script>
+  <script src="js/loading-animation.js"></script>
+</head>
+
+<body>
+  <div id="devdevdev-reference"></div>
+
+  <!-- facebook -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <!-- end facebook -->
+
+  <div id="root-container">
+    <header>
+      <div class="subtitle">User Survey</div>
+      <time class="date" datetime="2014-11-10">Monday, November 10, 2014</time>
+      <div class="sitename">Longwebsitename.com</div>
+    </header>
+
+    <main>
+      <section id="rewards">
+        <header>
+          <h2>We have the following rewards for your participation.</h2>
+          <div class="byline">Please choose one reward from the below list for
+                              participating in our survey.</div>
+        </header>
+
+        <ul>
+          <li>
+            <img src="http://placekitten.com/220/145"
+                 alt="Stemologica Advanced Skincare Kit photo">
+            <div class="items-left"><span class="count">2</span> left</div>
+            <div class="brand">Stemologica ©</div>
+            <div class="title">Advanced Skincare Kit</div>
+            <div class="promo-code">Promo code <i>"Beautysystem"</i></div>
+
+            <ul class="prices">
+              <li class="regular-price">
+                <span>Regular Price</span>    <span>£119.95</span>
+              <li class="your-price">
+                <span>Your Price</span>       <span>£0.00</span>
+              <li class="shipping">
+                <span>Shipping</span>         <span>£3.95</span>
+            </ul>
+
+            <a class="button smaller-button" href="#">Choose this reward!</a>
+          </li>
+
+          <li>
+            <img src="http://placekitten.com/220/145"
+                 alt="Stemologica Advanced Skincare Kit photo">
+            <div class="items-left"><span class="count">4</span> left</div>
+            <div class="brand">E-Cigs Bran ©</div>
+            <div class="title">Electronic Cigarettes</div>
+            <div class="promo-code">Promo code <i>"Vapor"</i></div>
+
+            <ul class="prices">
+              <li class="regular-price">
+                <span>Regular Price</span>    <span>£139.95</span>
+              <li class="your-price">
+                <span>Your Price</span>       <span>£0.00</span>
+              <li class="shipping">
+                <span>Shipping</span>         <span>£4.95</span>
+            </ul>
+
+            <a class="button smaller-button" href="#">Choose this reward!</a>
+          </li>
+
+          <li>
+            <img src="http://placekitten.com/220/145"
+                 alt="Stemologica Advanced Skincare Kit photo">
+            <div class="items-left"><span class="count">3</span> left</div>
+            <div class="brand">Super Ketone plus ©</div>
+            <div class="title">Weight Loss Kit</div>
+            <div class="promo-code">Promo code <i>"Lloyds Bank"</i></div>
+
+            <ul class="prices">
+              <li class="regular-price">
+                <span>Regular Price</span>    <span>£87.75</span>
+              <li class="your-price">
+                <span>Your Price</span>       <span>£0.00</span>
+              <li class="shipping">
+                <span>Shipping</span>         <span>£4.95</span>
+            </ul>
+
+            <a class="button smaller-button" href="#">Choose this reward!</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <div id="comments-container">
+      <!-- facebook -->
+      <div class="fb-comments" data-href="http://example.com/" data-width="800" data-numposts="10" data-colorscheme="light"></div>
+      <!-- end facebook -->
+    </div>
+  </div>
+</body>
+
+</html>

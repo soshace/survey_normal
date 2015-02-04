@@ -3,7 +3,7 @@
 @import url(../fonts/open_sans_light/stylesheet.css);
 
 #devdevdev-reference {
-  background: url(../img/reference2.png) center top no-repeat;
+  background: url(../img/reference3.png) center top no-repeat;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -125,6 +125,59 @@ main > section#done > #loading-bar > #loading-bar-line {
   display: inline-block;
 }
 
+main > #rewards {
+  text-align: center;
+  margin-top: -70px; /* This page has unusual smaller margin */
+}
+
+main > #rewards > header {
+  margin-bottom: 43px;
+}
+
+main > #rewards > header > h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 22px 0 2px 0;
+}
+
+main > #rewards > header > .byline {
+  font-size: 14px;
+  color: #b7b7b7;
+}
+
+main > #rewards > ul {
+  border-spacing: 60px 0;
+  margin-left: -95px;
+}
+
+main > #rewards > ul > li {
+  display: table-cell;
+  position: relative;
+  width: 220px;
+  list-style-type: none;
+}
+
+main > #rewards > ul > li > .items-left {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  left: 178px;
+  top: -14px;
+  border: 1px solid #f00;
+  text-align: center;
+  padding: 12px;
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+main > #rewards > ul > li > .items-left > .count {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 a.button {
   display: inline-block;
   font-size: 24px;
@@ -143,4 +196,9 @@ a.button {
 a.button > .sub {
   font-size: 14px;
   text-transform: none;
+}
+
+a.smaller-button {
+  text-transform: none;
+  font-size: 18px;
 }
