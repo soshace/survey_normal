@@ -100,6 +100,24 @@ main > section#done > p {
   padding: 0 95px;
 }
 
+main > section#done > #loading-bar > ul {
+  list-style-type: none;
+  display: table;
+  margin-top: 30px;
+}
+
+main > section#done > #loading-bar > ul > li {
+  display: table-cell;
+  width: 240px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #e8e8e8;
+}
+
+main > section#done > #loading-bar > ul > li.enabled {
+  color: #000;
+}
+
 a.button {
   display: inline-block;
   font-size: 24px;
