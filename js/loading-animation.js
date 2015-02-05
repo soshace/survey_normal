@@ -1,30 +1,30 @@
 $(function() {
 
-    /**
-     * Function positions modal window (.js-modal)
-     *
-     * @function
-     * @name modalPositioning
-     * @returns {undefined}
-     */
-    function modalPositioning() {
-        var $this = $(this),
-            $modalWindow = $('.js-modal'),
-            modalWindowHeight,
-            windowHeight;
+  /**
+   * Function positions modal window (.js-modal)
+   *
+   * @function
+   * @name modalPositioning
+   * @returns {undefined}
+   */
+  function modalPositioning() {
+    var $this = $(this),
+        $modalWindow = $('.js-modal'),
+        modalWindowHeight,
+        windowHeight;
 
-        if ($modalWindow.length) {
-            modalWindowHeight = $modalWindow.height();
-            windowHeight = $this.height();
+    if ($modalWindow.length) {
+      modalWindowHeight = $modalWindow.height();
+      windowHeight = $this.height();
 
-            if (windowHeight > modalWindowHeight) {
-                $modalWindow.css('top', windowHeight / 2 - modalWindowHeight / 2);
-                return;
-            }
+      if (windowHeight > modalWindowHeight) {
+        $modalWindow.css('top', windowHeight / 2 - modalWindowHeight / 2);
+        return;
+      }
 
-            $modalWindow.css('top', 0);
-        }
+      $modalWindow.css('top', 0);
     }
+  }
 
   // Set active frame of loading bar
   var set_active_frame = function(frame) {
@@ -64,20 +64,20 @@ $(function() {
 
   $('.js-player').jPlayer({
     ready: function () {
-        $(this).jPlayer('setMedia', {
-            mp3: 'audio/uk.mp3'
-        }).jPlayer('play');
+      $(this).jPlayer('setMedia', {
+          mp3: 'audio/uk.mp3'
+      }).jPlayer('play');
     },
     swfPath: 'js/vendors/jplayer',
     supplied: 'mp3',
     cssSelectorAncestor: '',
     cssSelector: {
-        play: '.js-play',
-        pause: '.js-pause',
-        playBar: '.js-play-bar',
-        noSolution: '.js-no-solution'
+      play: '.js-play',
+      pause: '.js-pause',
+      playBar: '.js-play-bar',
+      noSolution: '.js-no-solution'
     }
   });
 
-    modalPositioning.call(window);
+  modalPositioning.call(window);
 });
