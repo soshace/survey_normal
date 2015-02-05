@@ -247,6 +247,60 @@ main > #rewards > ul > li > ul.prices > li.shipping > span + span {
   font-size: 11px;
   text-align: center;
   padding: 0 120px;
+  margin: 50px 0 30px 0;
+}
+
+#root-container > footer > .player {
+  margin: 20px 0;
+}
+
+#root-container > footer > .player:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#root-container > footer > .player .player__content {
+    width: 227px;
+    margin: 0 auto;
+}
+
+#root-container > footer > .player .player__update {
+    padding-top: 4px;
+    color: #eb5c5c;
+}
+
+#root-container > footer > .player .player-sprite {
+    background: url('../img/player_sprite.png');
+}
+
+#root-container > footer > .player .player__play,
+#root-container > footer > .player .player__pause {
+    width: 38px;
+    height: 48px;
+    float: left;
+}
+
+#root-container > footer > .player .player-sprite.player__pause {
+    background-position: -1px -1px;
+}
+
+#root-container > footer > .player .player-sprite.player__play {
+    background-position: -40px -2px;
+}
+
+#root-container > footer > .player .player-sprite.player__bar {
+    margin-top: 24px;
+    width: 181px;
+    height: 10px;
+    background-position: -78px -13px;
+    float: right;
+}
+
+#root-container > footer > .player .player-sprite.player__bar__filler {
+    float: left;
+    height: 100%;
+    background-position: -78px -2px;
 }
 
 #invitation-popup {
