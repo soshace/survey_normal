@@ -75,6 +75,16 @@ main > article#invitation > a.button {
   padding: 45px 0;
 }
 
+#quiz-reviews {
+  background: #061721;
+  padding: 115px 80px;
+}
+
+#quiz-reviews > ul {
+  margin: 0;
+  padding: 0;
+}
+
 main > section#done {
   text-align: center;
 }
