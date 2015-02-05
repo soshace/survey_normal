@@ -1,3 +1,4 @@
+@import url(reset.css);
 @import url(../fonts/open_sans/stylesheet.css);
 @import url(../fonts/open_sans_bold/stylesheet.css);
 @import url(../fonts/open_sans_light/stylesheet.css);
@@ -470,4 +471,8 @@ a.button.right-aligned {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
   z-index: 10;
+}
+
+.modal-widow-body {
+    overflow: hidden;
 }
