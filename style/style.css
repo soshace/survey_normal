@@ -261,46 +261,46 @@ main > #rewards > ul > li > ul.prices > li.shipping > span + span {
 }
 
 #root-container > footer > .player .player__content {
-    width: 227px;
-    margin: 0 auto;
+  width: 227px;
+  margin: 0 auto;
 }
 
 #root-container > footer > .player .player__update {
-    padding-top: 4px;
-    color: #eb5c5c;
+  padding-top: 4px;
+  color: #eb5c5c;
 }
 
 #root-container > footer > .player .player-sprite {
-    background: url('../img/player_sprite.png');
+  background: url('../img/player-sprites.png');
 }
 
 #root-container > footer > .player .player__play,
 #root-container > footer > .player .player__pause {
-    width: 38px;
-    height: 48px;
-    float: left;
+  width: 31px;
+  height: 35px;
+  float: left;
 }
 
 #root-container > footer > .player .player-sprite.player__pause {
-    background-position: -1px -1px;
+  background-position: -188px 0;
 }
 
 #root-container > footer > .player .player-sprite.player__play {
-    background-position: -40px -2px;
+  background-position: -222px 0;
 }
 
 #root-container > footer > .player .player-sprite.player__bar {
-    margin-top: 24px;
-    width: 181px;
-    height: 10px;
-    background-position: -78px -13px;
-    float: right;
+  margin-top: 10px;
+  float: right;
+  background-position: 0 0;
+  width: 182px;
+  height: 9px;
 }
 
 #root-container > footer > .player .player-sprite.player__bar__filler {
-    float: left;
-    height: 100%;
-    background-position: -78px -2px;
+  float: left;
+  height: 100%;
+  background-position: 0 -26px;
 }
 
 #invitation-popup {
