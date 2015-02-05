@@ -1,9 +1,36 @@
 $(function() {
+
+    /**
+     * Function positions modal window (.js-modal)
+     *
+     * @function
+     * @name modalPositioning
+     * @returns {undefined}
+     */
+    function modalPositioning() {
+        var $this = $(this),
+            $modalWindow = $('.js-modal'),
+            modalWindowHeight,
+            windowHeight;
+
+        if ($modalWindow.length) {
+            modalWindowHeight = $modalWindow.height();
+            windowHeight = $this.height();
+
+            if (windowHeight > modalWindowHeight) {
+                $modalWindow.css('top', windowHeight / 2 - modalWindowHeight / 2);
+                return;
+            }
+
+            $modalWindow.css('top', 0);
+        }
+    }
+
   // Set active frame of loading bar
   var set_active_frame = function(frame) {
     var y_offset = frame * -31;
     $("#loading-bar-line").css("background-position", "0 " + y_offset + "px");
-  }
+  };
 
   // Run loading bar animation, firing callback when finished
   var run_animation = function(end_callback) {
@@ -23,10 +50,10 @@ $(function() {
         clearInterval(interval);
         end_callback();
       }
-    }
+    };
 
     var interval = setInterval(next, 100);
-  }
+  };
 
   // Start animation sequence if 'loading-bar' exists on page
   if ($('#loading-bar').length) {
@@ -51,4 +78,6 @@ $(function() {
         noSolution: '.js-no-solution'
     }
   });
+
+    modalPositioning.call(window);
 });
