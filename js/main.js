@@ -79,5 +79,74 @@ $(function() {
     }
   });
 
+  var questions = [
+    {
+      text: 'Where are you viewing Lloyds Bank from?',
+      answers: [
+        'At home',
+        'At work',
+        'Other'
+      ]
+    },
+    {
+      text: 'How often do you visit Lloyds Bank?',
+      answers: [
+        'Once a week or more',
+        'Less than once a week',
+        'This is my first visit'
+      ]
+    },
+    {
+      text: 'How many hours do you spend online each day?',
+      answers: [
+        'Less than 4 hours',
+        '5 - 10 Hours',
+        'More than 10 hours'
+      ]
+    },
+    {
+      text: 'What is your gender?',
+      answers: [
+        'Male',
+        'Female'
+      ]
+    }
+  ];
+
+  var currentQuestionIndex = 0;
+
+  var nextQuestion = function() {
+    currentQuestionIndex++;
+    if (currentQuestionIndex >= questions.length) {
+      location.href="submitting_page.html";
+    } else {
+      loadCurrentQuestion();
+    }
+  }
+
+  var loadCurrentQuestion = function() {
+    loadQuestion(questions[currentQuestionIndex],
+      currentQuestionIndex+1, questions.length);
+  }
+
+  var loadQuestion = function(question, num, count) {
+    $('#question').attr('class', 'variants-'+question.answers.length)
+    $('#question > h2 > .num').text(num);
+    $('#question > h2 > .count').text(count);
+    $('#question > .text').text(question.text);
+    var ul = $('#question > ul');
+    ul.empty();
+
+    $.each(question.answers, function(index, value) {
+      var li = $('<li><a class="button" href="#"></a></li>');
+      var a = li.find('a');
+      a.click(nextQuestion);
+      a.text(value);
+      li.appendTo(ul);
+    })
+  }
+
+  loadCurrentQuestion();
+
   modalPositioning.call(window);
 });
