@@ -242,6 +242,13 @@ main > #rewards > ul > li > ul.prices > li.shipping > span + span {
   color: #071721;
 }
 
+#root-container > footer {
+  color: #a6a6a6;
+  font-size: 11px;
+  text-align: center;
+  padding: 0 120px;
+}
+
 #invitation-popup {
   z-index: 12;
   position: absolute;
