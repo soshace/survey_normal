@@ -49,33 +49,33 @@ body {
   margin-top: 8px; /* 18px - 10px */
 }
 
-#root-container > main {
+main {
   background: #fff;
   padding: 70px 75px;
 }
 
-#root-container > main p {
+main p {
   font-size: 14px;
   line-height: 24px;
   margin: 30px 0;
 }
 
-#root-container > main > article#invitation {
+main > article#invitation {
 
 }
 
-#root-container > main > article#invitation > #alice-boyle-photo {
+main > article#invitation > #alice-boyle-photo {
   float: left;
   margin: -50px 35px 0 -15px;
 }
 
-#root-container > main > article#invitation:after {
+main > article#invitation:after {
   content: "";
   display: table;
   clear: both;
 }
 
-#root-container > main > article#invitation > a.button {
+main > article#invitation > a.button {
   margin-top: 8px;
 }
 
