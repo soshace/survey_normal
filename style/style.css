@@ -60,10 +60,6 @@ main p {
   margin: 30px 0;
 }
 
-main > article#invitation {
-
-}
-
 main > article#invitation > #alice-boyle-photo {
   float: left;
   margin: -50px 35px 0 -15px;
