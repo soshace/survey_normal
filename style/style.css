@@ -93,14 +93,18 @@ main > article#invitation > a.button {
   border-bottom: 1px solid #0b212f;
 }
 
+#quiz-reviews > ul > li:last-child {
+  border-bottom: none;
+}
+
 #quiz-reviews > ul > li > img {
-  margin: -10px -160px;
+  margin: 0px -160px;
   float: left;
 }
 
 #quiz-reviews > ul > li > h2 {
   font-size: 14px;
-  margin: 0;
+  margin: 10px 0 0 0;
   font-weight: bold;
 }
 
