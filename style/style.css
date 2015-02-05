@@ -3,372 +3,368 @@
 @import url(../fonts/open_sans_light/stylesheet.css);
 
 #devdevdev-reference {
-  background: url(../img/reference4.png) center top no-repeat;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0.3;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  -webkit-filter: grayscale(100%) invert();
+    background: url(../img/reference4.png) center top no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    -webkit-filter: grayscale(100%) invert();
 }
 
 body {
-  background: url(../img/page-background.png) repeat-x top #f1f9ff;
-  font-family: Open Sans, sans-serif;
+    background: url(../img/page-background.png) repeat-x top #f1f9ff;
+    font-family: Open Sans, sans-serif;
 }
 
 #root-container {
-  width: 940px;
-  margin: 86px auto 0 auto;
+    width: 940px;
+    margin: 86px auto 0 auto;
 }
 
 #root-container > header {
-  background: #2274a5;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  color: #5499c2;
-  padding: 16px 20px 13px 20px;
+    background: #2274a5;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: #5499c2;
+    padding: 16px 20px 13px 20px;
 }
 
 #root-container > header > .subtitle {
-  text-transform: uppercase;
-  font-size: 11px;
+    text-transform: uppercase;
+    font-size: 11px;
 }
 
 #root-container > header > .sitename {
-  font-size: 18px;
-  color: #fff;
-  line-height: 28px;
+    font-size: 18px;
+    color: #fff;
+    line-height: 28px;
 }
 
 #root-container > header > .date {
-  font-size: 10px;
-  float: right;
-  margin-top: 8px; /* 18px - 10px */
+    font-size: 10px;
+    float: right;
+    margin-top: 8px; /* 18px - 10px */
 }
 
 main {
-  background: #fff;
-  padding: 70px 75px;
+    background: #fff;
+    padding: 70px 75px;
 }
 
 main p {
-  font-size: 14px;
-  line-height: 24px;
-  margin: 30px 0;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 30px 0;
 }
 
 main > article#invitation > #alice-boyle-photo {
-  float: left;
-  margin: -50px 35px 0 -15px;
+    float: left;
+    margin: -50px 35px 0 -15px;
 }
 
 main > article#invitation > a.button {
-  margin-top: 8px;
+    margin-top: 8px;
 }
 
 #root-container > #comments-container {
-  background: #fff linear-gradient(to bottom, #f0f0f0 0%, #fff 45px);
-  text-align: center;
-  padding: 45px 0;
+    background: #fff linear-gradient(to bottom, #f0f0f0 0%, #fff 45px);
+    text-align: center;
+    padding: 45px 0;
 }
 
 #quiz-reviews {
-  background: #061721;
-  padding: 115px 80px;
+    background: #061721;
+    padding: 115px 80px;
 }
 
 #quiz-reviews > ul {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 main > section#done {
-  text-align: center;
+    text-align: center;
 }
 
 main > section#done > header {
-  font-size: 48px;
-  line-height: 45px;
-  margin-top: 35px;
-  font-weight: bold;
+    font-size: 48px;
+    line-height: 45px;
+    margin-top: 35px;
+    font-weight: bold;
 }
 
 main > section#done > p {
-  padding: 0 95px;
+    padding: 0 95px;
 }
 
 main > section#done > #loading-bar > ul {
-  list-style-type: none;
-  display: table;
-  margin-top: 30px;
+    list-style-type: none;
+    display: table;
+    margin-top: 30px;
 }
 
 main > section#done > #loading-bar > ul > li {
-  display: table-cell;
-  width: 240px;
-  font-size: 14px;
-  font-weight: bold;
-  color: #e8e8e8;
+    display: table-cell;
+    width: 240px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #e8e8e8;
 }
 
 main > section#done > #loading-bar > ul > li.enabled {
-  color: #000;
+    color: #000;
 }
 
 main > section#done > #loading-bar > #loading-bar-line {
-  background: url(../img/loading-bar-sprites.png) no-repeat;
-  width: 508px;
-  height: 31px;
-  display: inline-block;
+    background: url(../img/loading-bar-sprites.png) no-repeat;
+    width: 508px;
+    height: 31px;
+    display: inline-block;
 }
 
 main > #rewards {
-  text-align: center;
-  margin: -70px 0 -40px 0; /* This page has unusual smaller margins */
+    text-align: center;
+    margin: -70px 0 -40px 0; /* This page has unusual smaller margins */
 }
 
 main > #rewards > header {
-  margin-bottom: 43px;
+    margin-bottom: 43px;
 }
 
 main > #rewards > header > h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 22px 0 2px 0;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 22px 0 2px 0;
 }
 
 main > #rewards > header > .byline {
-  font-size: 14px;
-  color: #b7b7b7;
+    font-size: 14px;
+    color: #b7b7b7;
 }
 
 main > #rewards > ul {
-  border-spacing: 60px 0;
-  margin-left: -95px;
+    border-spacing: 60px 0;
+    margin-left: -95px;
 }
 
 main > #rewards > ul > li {
-  display: table-cell;
-  position: relative;
-  width: 220px;
-  list-style-type: none;
+    display: table-cell;
+    position: relative;
+    width: 220px;
+    list-style-type: none;
 }
 
 main > #rewards > ul > li > .items-left {
-  position: absolute;
-  width: 36px;
-  height: 37px;
-  left: 178px;
-  top: -12px;
-  text-align: center;
-  padding: 12px;
-  display: inline-block;
-  color: #fff;
-  font-size: 14px;
-  line-height: 18px;
-  background: url(../img/sticker-n-left.png);
+    position: absolute;
+    width: 36px;
+    height: 37px;
+    left: 178px;
+    top: -12px;
+    text-align: center;
+    padding: 12px;
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+    background: url(../img/sticker-n-left.png);
 }
 
 main > #rewards > ul > li > .items-left > .count {
-  display: block;
-  font-size: 18px;
-  font-weight: bold;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 main > #rewards > ul > li > .brand {
-  font-size: 14px;
-  font-weight bold;
-  color: #2274a5;
-  margin: 5px 0 0 0;
+    font-size: 14px;
+    font-weight bold;
+    color: #2274a5;
+    margin: 5px 0 0 0;
 }
 
 main > #rewards > ul > li > .title {
-  font-weight: bold;
-  font-size: 18px;
-  color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    color: #000;
 }
 
 main > #rewards > ul > li > .promo-code {
-  font-size: 14px;
-  color: #b7b7b7;
-  margin: 6px 0 1px 0;
+    font-size: 14px;
+    color: #b7b7b7;
+    margin: 6px 0 1px 0;
 }
 
 main > #rewards > ul > li > .promo-code > i {
-  color: #000;
-  font-style: normal;
+    color: #000;
+    font-style: normal;
 }
 
 main > #rewards > ul > li > ul.prices {
-  overflow-x: hidden;
-  list-style: none;
-  text-align: left;
-  font-size: 14px;
-  color: #b7b7b7;
-  line-height: 24px;
-  padding: 0;
-  margin: 0 0 18px 0;
+    overflow-x: hidden;
+    list-style: none;
+    text-align: left;
+    font-size: 14px;
+    color: #b7b7b7;
+    line-height: 24px;
+    padding: 0;
+    margin: 0 0 18px 0;
 }
 
 main > #rewards > ul > li > ul.prices > li:before {
-  float: left;
-  width: 0;
-  white-space: nowrap;
-  content:
-  "........................................"
-  "........................................"
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content: "........................................" "........................................"
 }
 
 main > #rewards > ul > li > ul.prices > li > span:first-child {
-  padding-right: 1px;
-  background: #fff;
+    padding-right: 1px;
+    background: #fff;
 }
 
 main > #rewards > ul > li > ul.prices > li > span + span {
-  float: right;
-  padding-left: 2px;
-  background: #fff;
-  font-weight: bold;
+    float: right;
+    padding-left: 2px;
+    background: #fff;
+    font-weight: bold;
 }
 
 main > #rewards > ul > li > ul.prices > li.regular-price > span + span {
-  color: #bdbdbd;
+    color: #bdbdbd;
 }
 
 main > #rewards > ul > li > ul.prices > li.your-price > span + span {
-  color: #f43030;
+    color: #f43030;
 }
 
 main > #rewards > ul > li > ul.prices > li.shipping > span + span {
-  color: #071721;
+    color: #071721;
 }
 
 main > #question {
-  margin: 35px 0;
-  text-align: center;
+    margin: 35px 0;
+    text-align: center;
 }
 
 main > #question > h2 {
-  color: #b7b7b7;
-  font-size: 14px;
-  font-weight: normal;
+    color: #b7b7b7;
+    font-size: 14px;
+    font-weight: normal;
 }
 
 main > #question > .text {
-  color: #000;
-  font-size: 48px;
-  font-weight: bold;
-  margin-top: 18px;
+    color: #000;
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 18px;
 }
 
 main > #question > ul {
-  margin: 55px 0;
-  padding: 0;
-  list-style-type: none;
+    margin: 55px 0;
+    padding: 0;
+    list-style-type: none;
 }
 
 main > #question > ul > li {
-  padding: 0 10px;
-  display: inline-block;
+    padding: 0 10px;
+    display: inline-block;
 }
 
 #root-container > footer {
-  color: #a6a6a6;
-  font-size: 11px;
-  text-align: center;
-  padding: 0 120px;
-  margin: 50px 0 30px 0;
+    color: #a6a6a6;
+    font-size: 11px;
+    text-align: center;
+    padding: 0 120px;
+    margin: 50px 0 30px 0;
 }
 
 #root-container > footer > .player {
-  margin: 20px 0;
+    margin: 20px 0;
 }
 
 #root-container > footer > .player .player__content {
-  width: 227px;
-  margin: 0 auto;
+    width: 227px;
+    margin: 0 auto;
 }
 
 #root-container > footer > .player .player__update {
-  padding-top: 4px;
-  color: #eb5c5c;
+    padding-top: 4px;
+    color: #eb5c5c;
 }
 
 #root-container > footer > .player .player-sprite {
-  background: url('../img/player-sprites.png');
+    background: url('../img/player-sprites.png');
 }
 
 #root-container > footer > .player .player__play,
 #root-container > footer > .player .player__pause {
-  width: 31px;
-  height: 35px;
-  float: left;
+    width: 31px;
+    height: 35px;
+    float: left;
 }
 
 #root-container > footer > .player .player-sprite.player__pause {
-  background-position: -188px 0;
+    background-position: -188px 0;
 }
 
 #root-container > footer > .player .player-sprite.player__play {
-  background-position: -222px 0;
+    background-position: -222px 0;
 }
 
 #root-container > footer > .player .player-sprite.player__bar {
-  margin-top: 10px;
-  float: right;
-  background-position: 0 0;
-  width: 182px;
-  height: 9px;
+    margin-top: 10px;
+    float: right;
+    background-position: 0 0;
+    width: 182px;
+    height: 9px;
 }
 
 #root-container > footer > .player .player-sprite.player__bar__filler {
-  float: left;
-  height: 100%;
-  background-position: 0 -26px;
+    float: left;
+    height: 100%;
+    background-position: 0 -26px;
 }
 
 #invitation-popup {
-  z-index: 12;
-  position: absolute;
-  width: 460px;
-  left: 50%;
-  top: 50%;
-  margin-left: -230px;
-  margin-top: -100px;
+    z-index: 12;
+    position: absolute;
+    width: 460px;
+    left: 50%;
+    margin-left: -230px;
 }
 
 #invitation-popup > header {
-  background: #2274a5;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  padding: 15px 20px;
+    background: #2274a5;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 15px 20px;
 }
 
 #invitation-popup > header > h2 {
-  margin: 0;
-  font-size: 18px;
-  font-weight: bold;
-  color: #fff;
-  float: left;
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    float: left;
 }
 
 #invitation-popup > header > .close {
-  float: right;
-  font-size: 32px;
-  line-height: 24px;
-  color: #fff;
-  font-weight: bold;
-  text-decoration: none;
+    float: right;
+    font-size: 32px;
+    line-height: 24px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 #invitation-popup > section {
-  background: #fff;
-  margin: 0;
-  padding: 30px 40px;
-  font-size: 14px;
+    background: #fff;
+    margin: 0;
+    padding: 30px 40px;
+    font-size: 14px;
 }
 
 #invitation-popup > section:before,
@@ -379,65 +375,72 @@ main > article#invitation:before,
 main > article#invitation:after,
 #root-container > footer > .player:before,
 #root-container > footer > .player:after {
-  content: " ";
-  display: table;
+    content: " ";
+    display: table;
 }
 
 #invitation-popup > section:after,
 #invitation-popup > header:after,
 main > article#invitation:after,
 #root-container > footer > .player:after {
-  clear: both;
+    clear: both;
 }
 
 a.button {
-  display: inline-block;
-  font-size: 24px;
-  padding: 10px 34px;
-  color: #fff;
-  background: #ffa100 linear-gradient(to bottom, #ffab00 0%, #ff9000 100%);
-  border-radius: 4px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: bold;
-  text-align: center;
-  text-shadow: 0 2px #ea7500;
-  box-shadow: 0 3px #e4e4e4;
+    display: inline-block;
+    font-size: 24px;
+    padding: 10px 34px;
+    color: #fff;
+    background: #ffa100 linear-gradient(to bottom, #ffab00 0%, #ff9000 100%);
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 2px #ea7500;
+    box-shadow: 0 3px #e4e4e4;
 }
 
 a.button:hover {
-  background: #ffb400 linear-gradient(to bottom, #ffc000 0%, #ffb400 100%);
-  text-shadow: 0 2px #fb9b3b;
+    background: #ffb400 linear-gradient(to bottom, #ffc000 0%, #ffb400 100%);
+    text-shadow: 0 2px #fb9b3b;
 }
 
 a.button > .sub {
-  font-size: 14px;
-  text-transform: none;
+    font-size: 14px;
+    text-transform: none;
 }
 
 a.button.smaller-button {
-  text-transform: none;
-  font-size: 18px;
-  padding: 13px 20px;
+    text-transform: none;
+    font-size: 18px;
+    padding: 13px 20px;
 }
 
 #question a.button {
-  text-transform: none;
-  padding: 20px;
-  min-width: 180px;
+    text-transform: none;
+    padding: 20px;
+    min-width: 180px;
 }
 
 #question.variants-2 a.button.question-button {
-  font-size: 24px;
+    font-size: 24px;
 }
 
 a.button.right-aligned {
-  float: right;
+    float: right;
 }
 
 .modal-shadow {
-  background: rgba(0,0,0,.6);
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  z-index: 10;
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.modal-widow-body {
+    overflow: hidden;
 }
