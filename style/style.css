@@ -78,11 +78,41 @@ main > article#invitation > a.button {
 #quiz-reviews {
   background: #061721;
   padding: 115px 80px;
+  color: #fff;
 }
 
 #quiz-reviews > ul {
   margin: 0;
   padding: 0;
+  list-style-type: none;
+}
+
+#quiz-reviews > ul > li {
+  padding: 10px 0 0 160px;
+  min-height: 150px;
+  border-bottom: 1px solid #0b212f;
+}
+
+#quiz-reviews > ul > li > img {
+  margin: -10px -160px;
+  float: left;
+}
+
+#quiz-reviews > ul > li > h2 {
+  font-size: 14px;
+  margin: 0;
+  font-weight: bold;
+}
+
+#quiz-reviews > ul > li > time {
+  color: #244459;
+  font-size: 12px;
+}
+
+#quiz-reviews > ul > li > p {
+  font-size: 14px;
+  line-height: 22px;
+  margin: 7px 0;
 }
 
 main > section#done {
