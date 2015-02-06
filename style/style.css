@@ -26,11 +26,12 @@ body {
 }
 
 #root-container > header {
-  background: #2274a5;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  color: #5499c2;
-  padding: 16px 20px 13px 20px;
+    background: #2274a5;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: #5499c2;
+    height: 56px;
+    padding: 16px 20px 0 20px;
 }
 
 #root-container > header > .subtitle {
@@ -39,20 +40,22 @@ body {
 }
 
 #root-container > header > .sitename {
-  font-size: 18px;
-  color: #fff;
-  line-height: 28px;
+    font-size: 18px;
+    color: #fff;
+    line-height: 39px;
 }
 
 #root-container > header > .date {
-  font-size: 10px;
-  float: right;
-  margin-top: 8px; /* 18px - 10px */
+    font-size: 10px;
+    float: right;
+    margin-top: 8px;
+    line-height: 30px;
 }
 
 main {
-  background: #fff;
-  padding: 70px 75px;
+    background: #fff;
+    padding: 70px 75px 0 75px;
+    height: 459px;
 }
 
 main p {
@@ -61,13 +64,21 @@ main p {
   margin: 30px 0;
 }
 
-main > article#invitation > #alice-boyle-photo {
-  float: left;
-  margin: -50px 35px 0 -15px;
+#invitation > #alice-boyle-photo {
+    float: left;
+    margin: -22px 35px 0 -15px;
 }
 
-main > article#invitation > a.button {
-  margin-top: 8px;
+#invitation > a.button {
+    margin-top: 32px;
+    padding: 15px 33px;
+    word-spacing: -6px;
+    line-height: 22px;
+}
+
+#invitation > a.button .sub{
+    word-spacing: 1px;
+    line-height: 23px;
 }
 
 #root-container > #comments-container {
@@ -120,28 +131,28 @@ main > article#invitation > a.button {
   margin: 7px 0;
 }
 
-main > section#done {
+#done {
   text-align: center;
 }
 
-main > section#done > header {
+#done > header {
   font-size: 48px;
   line-height: 45px;
   margin-top: 35px;
   font-weight: bold;
 }
 
-main > section#done > p {
+#done > p {
   padding: 0 95px;
 }
 
-main > section#done > #loading-bar > ul {
+#loading-bar > ul {
   list-style-type: none;
   display: table;
   margin-top: 30px;
 }
 
-main > section#done > #loading-bar > ul > li {
+#loading-bar > ul > li {
   display: table-cell;
   width: 240px;
   font-size: 14px;
@@ -149,50 +160,50 @@ main > section#done > #loading-bar > ul > li {
   color: #e8e8e8;
 }
 
-main > section#done > #loading-bar > ul > li.enabled {
+#loading-bar > ul > li.enabled {
   color: #000;
 }
 
-main > section#done > #loading-bar > #loading-bar-line {
+#loading-bar-line {
   background: url(../img/loading-bar-sprites.png) no-repeat;
   width: 508px;
   height: 31px;
   display: inline-block;
 }
 
-main > #rewards {
+#rewards {
   text-align: center;
   margin: -70px 0 -40px 0; /* This page has unusual smaller margins */
 }
 
-main > #rewards > header {
+#rewards > header {
   margin-bottom: 43px;
 }
 
-main > #rewards > header > h2 {
+#rewards > header > h2 {
   font-size: 24px;
   font-weight: bold;
   margin: 22px 0 2px 0;
 }
 
-main > #rewards > header > .byline {
+#rewards > header > .byline {
   font-size: 14px;
   color: #b7b7b7;
 }
 
-main > #rewards > ul {
+#rewards > ul {
   border-spacing: 60px 0;
   margin-left: -95px;
 }
 
-main > #rewards > ul > li {
+#rewards > ul > li {
   display: table-cell;
   position: relative;
   width: 220px;
   list-style-type: none;
 }
 
-main > #rewards > ul > li > .items-left {
+#rewards > ul > li > .items-left {
   position: absolute;
   width: 36px;
   height: 37px;
@@ -207,37 +218,37 @@ main > #rewards > ul > li > .items-left {
   background: url(../img/sticker-n-left.png);
 }
 
-main > #rewards > ul > li > .items-left > .count {
+#rewards > ul > li > .items-left > .count {
   display: block;
   font-size: 18px;
   font-weight: bold;
 }
 
-main > #rewards > ul > li > .brand {
+#rewards > ul > li > .brand {
   font-size: 14px;
-  font-weight bold;
+  font-weight: bold;
   color: #2274a5;
   margin: 5px 0 0 0;
 }
 
-main > #rewards > ul > li > .title {
+#rewards > ul > li > .title {
   font-weight: bold;
   font-size: 18px;
   color: #000;
 }
 
-main > #rewards > ul > li > .promo-code {
+#rewards > ul > li > .promo-code {
   font-size: 14px;
   color: #b7b7b7;
   margin: 6px 0 1px 0;
 }
 
-main > #rewards > ul > li > .promo-code > i {
+#rewards > ul > li > .promo-code > i {
   color: #000;
   font-style: normal;
 }
 
-main > #rewards > ul > li > ul.prices {
+#rewards > ul > li > ul.prices {
   overflow-x: hidden;
   list-style: none;
   text-align: left;
@@ -248,7 +259,7 @@ main > #rewards > ul > li > ul.prices {
   margin: 0 0 18px 0;
 }
 
-main > #rewards > ul > li > ul.prices > li:before {
+#rewards > ul > li > ul.prices > li:before {
   float: left;
   width: 0;
   white-space: nowrap;
@@ -257,42 +268,42 @@ main > #rewards > ul > li > ul.prices > li:before {
   "........................................"
 }
 
-main > #rewards > ul > li > ul.prices > li > span:first-child {
+#rewards > ul > li > ul.prices > li > span:first-child {
   padding-right: 1px;
   background: #fff;
 }
 
-main > #rewards > ul > li > ul.prices > li > span + span {
+#rewards > ul > li > ul.prices > li > span + span {
   float: right;
   padding-left: 2px;
   background: #fff;
   font-weight: bold;
 }
 
-main > #rewards > ul > li > ul.prices > li.regular-price > span + span {
+#rewards > ul > li > ul.prices > li.regular-price > span + span {
   color: #bdbdbd;
 }
 
-main > #rewards > ul > li > ul.prices > li.your-price > span + span {
+#rewards > ul > li > ul.prices > li.your-price > span + span {
   color: #f43030;
 }
 
-main > #rewards > ul > li > ul.prices > li.shipping > span + span {
+#rewards > ul > li > ul.prices > li.shipping > span + span {
   color: #071721;
 }
 
-main > #question {
+#question {
   margin: 35px 0;
   text-align: center;
 }
 
-main > #question > h2 {
+#question > h2 {
   color: #b7b7b7;
   font-size: 14px;
   font-weight: normal;
 }
 
-main > #question > .text {
+#question > .text {
   color: #000;
   font-size: 48px;
   font-weight: bold;
@@ -300,13 +311,13 @@ main > #question > .text {
   background: top center no-repeat url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAABAQMAAAC41l9CAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjZBQTQzNjdBQUQ0MTExRTRCQ0I2REMyOTk5MzgzRUU3IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjZBQTQzNjdCQUQ0MTExRTRCQ0I2REMyOTk5MzgzRUU3Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NkFBNDM2NzhBRDQxMTFFNEJDQjZEQzI5OTkzODNFRTciIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NkFBNDM2NzlBRDQxMTFFNEJDQjZEQzI5OTkzODNFRTciLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6BNQyiAAAAA1BMVEXc3NyBAeViAAAACklEQVQIHWOAAQAACQABC2GvtgAAAABJRU5ErkJggg==);
 }
 
-main > #question > ul {
+#question > ul {
   margin: 55px 0;
   padding: 0;
   list-style-type: none;
 }
 
-main > #question > ul > li {
+#question > ul > li {
   padding: 0 10px;
   display: inline-block;
 }
@@ -317,6 +328,11 @@ main > #question > ul > li {
   text-align: center;
   padding: 0 120px;
   margin: 50px 0 30px 0;
+}
+
+#root-container > footer a {
+    color: #2274a5;
+    text-decoration: none;
 }
 
 #root-container > footer > .player {
@@ -377,10 +393,11 @@ main > #question > ul > li {
 }
 
 #invitation-popup > header {
-  background: #2274a5;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  padding: 15px 20px;
+    background: #2274a5;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 15px 20px 0 15px;
+    height: 34px;
 }
 
 #invitation-popup > header > h2 {
@@ -427,18 +444,18 @@ main > article#invitation:after,
 }
 
 a.button {
-  display: inline-block;
-  font-size: 24px;
-  padding: 10px 34px;
-  color: #fff;
-  background: #ffa100 linear-gradient(to bottom, #ffab00 0%, #ff9000 100%);
-  border-radius: 4px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: bold;
-  text-align: center;
-  text-shadow: 0 2px #ea7500;
-  box-shadow: 0 3px #e4e4e4;
+    display: inline-block;
+    font-size: 24px;
+    padding: 10px 34px;
+    color: #fff;
+    background: #ffa100 linear-gradient(to bottom, #ffab00 0%, #ff9000 100%);
+    border-radius: 6px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 2px #ea7500;
+    box-shadow: 0 3px #e4e4e4;
 }
 
 a.button:hover {
