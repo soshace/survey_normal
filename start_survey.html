@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>User survey</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="js/vendors/jquery-2.1.3.min.js"></script>
+    <script src="js/vendors/jplayer/jquery.jplayer.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body class="modal-widow-body">
+<!-- facebook -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- end facebook -->
+<div id="root-container">
+    <header>
+        <div class="subtitle">User Survey</div>
+        <time class="date" datetime="2014-11-10">Monday, November 10, 2014</time>
+        <div class="sitename">Longwebsitename.com</div>
+    </header>
+
+    <main>
+        <article id="invitation" class="clearfix">
+            <img src="img/survey-start-alice-boyle.jpg" alt="Alice Boyle photo"
+                 width="303" height="416" id="alice-boyle-photo" />
+
+            <p>Hi, my name is Alice Boyle and we have selected you to participate in
+                a short 30-second survey about our website. Please tell me about your
+                experiences with it and in exchange for your valuable consumer data,
+                we will offer you a few <strong>exclusive rewards worth at least $50
+                    or more!</strong></p>
+
+            <p><strong>Want to know what the rewards are for this week? Complete
+                this survey to find out!</strong></p>
+
+            <a href="questions_page.html" class="button">
+                Start the survey!
+                <div class="sub">and get $50 worth reward</div>
+            </a>
+        </article>
+    </main>
+
+    <div id="comments-container">
+        <!-- facebook -->
+        <div class="fb-comments" data-href="http://example.com/" data-width="800" data-numposts="10" data-colorscheme="light"></div>
+        <!-- end facebook -->
+    </div>
+
+    <footer>
+        <div class="player">
+            <div class="clearfix player__content">
+                <div class="js-player"></div>
+                <a href="#" class="js-play player-sprite player__play"></a>
+                <a href="#" class="js-pause player-sprite player__pause"></a>
+
+                <div class="player-sprite player__bar">
+                    <div class="js-play-bar player-sprite player__bar__filler"></div>
+                </div>
+            </div>
+            <div class="js-no-solution player__update" style="display: none;">
+                To play the media you will need to either update your browser to a recent version or update your <a
+                    href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+            </div>
+        </div>
+
+        <p class="copyright">
+            Copyright 2008-2014 All rights reserved.<br/>
+
+            Questions or comments about this survey? E-mail us at:
+            <a href="mailto:queries@visitor-surveys.com">
+                queries@visitor-surveys.com</a><br/>
+
+            Your privacy is important to us. We do not collect your personal
+            information in this questionnaire. Please review our privacy policy and
+            terms. We are not affiliated nor partnered with any third-party. See
+            important terms and conditions.
+        </p>
+    </footer>
+</div>
+</body>
+
+</html>
