@@ -196,11 +196,11 @@ $(function () {
         $browser.html(navigator.userAgent);
     }
 
-    if ($IP.length) {
-        $.get(ipApi, function (data) {
-            $IP.html(data.ip);
-        }, 'json');
-    }
+    //if ($IP.length) {
+    //    $.get(ipApi, function (data) {
+    //        $IP.html(data.ip);
+    //    }, 'json');
+    //}
 
     window.comment = comment;
 });
