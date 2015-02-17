@@ -8,36 +8,49 @@ body {
     font-family: Open Sans, sans-serif;
 }
 
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
 #root-container {
     width: 940px;
-    margin: 86px auto 0 auto;
+    margin: 15px auto 0 auto;
 }
 
 #root-container > header {
     background: #2274a5;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
-    color: #5499c2;
-    height: 56px;
-    padding: 16px 20px 0 20px;
 }
 
-#root-container > header > .subtitle {
+#root-container > header .subtitle {
     text-transform: uppercase;
     font-size: 11px;
+    line-height: 25px;
 }
 
-#root-container > header > .sitename {
+#root-container > header .sitename {
     font-size: 18px;
     color: #fff;
-    line-height: 39px;
+    line-height: 55px;
 }
 
-#root-container > header > .date {
+#root-container > header .date {
     font-size: 10px;
     float: right;
     margin-top: 8px;
-    line-height: 30px;
+    line-height: 45px;
+}
+
+.header__description {
+    float: left;
+    padding: 16px 20px 0 20px;
+    color: #5499c2;
+    width: 785px;
 }
 
 main {
@@ -330,10 +343,10 @@ main p {
 #invitation-popup {
     z-index: 12;
     position: absolute;
-    width: 460px;
+    width: 545px;
     left: 50%;
     top: 50%;
-    margin-left: -230px;
+    margin-left: -272px;
     border-radius: 6px;
     overflow: hidden;
 }
@@ -364,9 +377,10 @@ main p {
 #invitation-popup > section {
     background: #fff;
     margin: 0;
-    padding: 34px 40px 0 40px;
+    padding: 34px 40px 0 100px;
     font-size: 14px;
     height: 322px;
+    position: relative;
 }
 
 #invitation-popup > section:before,
@@ -396,7 +410,7 @@ main > article#invitation:after,
 
 a.button {
     display: inline-block;
-    font-size: 19px;
+    font-size: 18px;
     padding: 10px 34px;
     color: #fff;
     background: #ffa100 linear-gradient(to bottom, #ffab00 0%, #ff9000 100%);
@@ -451,4 +465,36 @@ a.button.right-aligned {
 
 .modal-widow-body {
     overflow: hidden;
+}
+
+.red-present {
+    position: absolute;
+    top: 25px;
+    left: 17px;
+}
+
+.logo {
+    font-family: lucida grande, tahoma, verdana, arial, sans-serif;
+    background: none repeat scroll 0 0 rgb(220, 220, 220);
+    float: left;
+    height: 95px;
+    padding: 2px 18px;
+    width: 75px;
+}
+
+.logo h3 {
+    color: rgb(255, 255, 255);
+    font-size: 36px;
+    font-weight: 900;
+    margin: -3px;
+    text-shadow: 2px 2px 1px rgb(153, 153, 153);
+    line-height: 43px;
+}
+
+.logo > p {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 16px;
+    margin: 0 0 5px;
 }
