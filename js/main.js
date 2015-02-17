@@ -148,4 +148,11 @@ $(function () {
     loadCurrentQuestion();
 
     modalPositioning.call(window);
+
+    function comment() {
+        document.getElementById("comment").value = "";
+        alert("Your comment has been submitted and is currently awaiting approval.");
+    }
+
+    window.comment = comment;
 });

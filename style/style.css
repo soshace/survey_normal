@@ -25,6 +25,7 @@ body {
     background: #2274a5;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
+    overflow: hidden;
 }
 
 #root-container > header .subtitle {
@@ -55,8 +56,7 @@ body {
 
 main {
     background: #fff;
-    padding: 70px 75px 0 75px;
-    height: 459px;
+    padding: 70px 75px 40px 75px;
 }
 
 main p {
@@ -82,10 +82,11 @@ main p {
     line-height: 23px;
 }
 
-#root-container > #comments-container {
+#comments-container {
     background: #fff linear-gradient(to bottom, #f0f0f0 0%, #fff 45px);
     text-align: center;
     padding: 45px 0;
+    line-height: 1.2;
 }
 
 #done {
@@ -155,13 +156,11 @@ main p {
 }
 
 #rewards > ul > li {
-    display: table-cell;
     position: relative;
-    width: 220px;
     list-style-type: none;
 }
 
-#rewards > ul > li > .items-left {
+#rewards > ul > li .items-left {
     position: absolute;
     width: 36px;
     height: 37px;
@@ -176,13 +175,13 @@ main p {
     background: url(../img/sticker-n-left.png);
 }
 
-#rewards > ul > li > .items-left > .count {
+#rewards > ul > li .items-left > .count {
     display: block;
     font-size: 18px;
     font-weight: bold;
 }
 
-#rewards > ul > li > .brand {
+#rewards > ul > li .brand {
     font-size: 14px;
     font-weight: bold;
     color: #2274a5;
@@ -190,24 +189,24 @@ main p {
     line-height: 26px;
 }
 
-#rewards > ul > li > .title {
+#rewards > ul > li .title {
     font-weight: bold;
     font-size: 18px;
     color: #000;
 }
 
-#rewards > ul > li > .promo-code {
+#rewards > ul > li .promo-code {
     font-size: 14px;
     color: #b7b7b7;
     margin: 6px 0 1px 0;
 }
 
-#rewards > ul > li > .promo-code > i {
+#rewards > ul > li .promo-code > i {
     color: #000;
     font-style: normal;
 }
 
-#rewards > ul > li > ul.prices {
+#rewards > ul > li ul.prices {
     overflow-x: hidden;
     list-style: none;
     text-align: left;
@@ -218,35 +217,49 @@ main p {
     margin: 0 0 18px 0;
 }
 
-#rewards > ul > li > ul.prices > li:before {
+#rewards > ul > li .prices li:before {
     float: left;
     width: 0;
     white-space: nowrap;
     content: "........................................" "........................................"
 }
 
-#rewards > ul > li > ul.prices > li > span:first-child {
+#rewards > ul > li .prices > li > span:first-child {
     padding-right: 1px;
     background: #fff;
 }
 
-#rewards > ul > li > ul.prices > li > span + span {
+#rewards > ul > li .prices > li > span + span {
     float: right;
     padding-left: 2px;
     background: #fff;
     font-weight: bold;
 }
 
-#rewards > ul > li > ul.prices > li.regular-price > span + span {
+#rewards > ul > li .prices > li.regular-price > span + span {
     color: #bdbdbd;
 }
 
-#rewards > ul > li > ul.prices > li.your-price > span + span {
+#rewards > ul > li .prices > li.your-price > span + span {
     color: #f43030;
 }
 
-#rewards > ul > li > ul.prices > li.shipping > span + span {
+#rewards > ul > li .prices > li.shipping > span + span {
     color: #071721;
+}
+
+#rewards > ul > li .button {
+    float: right;
+    margin-top: 63px;
+}
+
+.product-description {
+    float: left;
+    padding-left: 50px;
+}
+
+.product-image {
+    float: left;
 }
 
 #question {
@@ -497,4 +510,18 @@ a.button.right-aligned {
     font-weight: 900;
     line-height: 16px;
     margin: 0 0 5px;
+}
+
+.addCommentBox {
+    margin-top: 0;
+    padding: 5px;
+    background: #f1f1f1;
+    border: 1px solid #DADADA;
+    text-align: right;
+}
+
+.commentTextBox {
+    margin: 3px 0;
+    width: 922px;
+    height: 40px;
 }

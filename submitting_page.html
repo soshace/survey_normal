@@ -12,18 +12,6 @@
 </head>
 
 <body>
-<!-- facebook -->
-<div id="fb-root"></div>
-<script>(function (d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s);
-    js.id = id;
-    js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.0";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<!-- end facebook -->
-
 <div id="root-container">
     <header class="clearfix">
         <div class="logo">
@@ -62,10 +50,105 @@
     </main>
 
     <div id="comments-container">
-        <!-- facebook -->
-        <div class="fb-comments" data-href="http://example.com/" data-width="800" data-numposts="10"
-             data-colorscheme="light"></div>
-        <!-- end facebook -->
+        <div class="addCommentBox">
+            <textarea name="comment" id="comment" class="commentTextBox"></textarea><br>
+            <input type="button" onclick="javascript: comment();" value="Comment">
+        </div>
+        <table width="100%" cellspacing="0" cellpadding="4" border="0" style="padding-top: 10px; font-size: 13px;">
+            <tbody>
+            <tr>
+                <td width="125" valign="top" align="right"><img src="img/comments/f1.gif"></td>
+                <td align="left" valign="top">
+                    <div style="font-weight: bold;">Alex Jones</div>
+                    <div style="padding-top: 5px;">Thanks for the gifts! I sold the skin care cream on eBay and made £
+                        113 on it. Oh by the way, nothing is stopping me from signing up to all the gifts listed, which
+                        I did, lol. Just letting you know.
+                    </div>
+                    <div style="padding-top: 5px; color: #9c9c9c; font-size: 11px;">February 03, 2015 at 5:36 pm</div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td width="125" valign="top" align="right"><img src="img/comments/f2.gif"></td>
+                <td align="left" valign="top">
+                    <div style="font-weight: bold;">Diana Hall</div>
+                    <div style="padding-top: 5px;">The survey was quick and easy. I chose the iPod shuffle and received
+                        a 3 day trial with nowlucky. Now I really am getting lucky ;)
+                    </div>
+                    <div style="padding-top: 5px; color: #9c9c9c; font-size: 11px;">February 01, 2015 at 2:24 pm</div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td width="125" valign="top" align="right"><img src="img/comments/f3.gif"></td>
+                <td align="left" valign="top">
+                    <div style="font-weight: bold;">Lana Wright</div>
+                    <div style="padding-top: 5px;">I had no use for the weightloss product, but I chose that one anyways
+                        and I was able to sell it for a decent profit.
+                    </div>
+                    <div style="padding-top: 5px; color: #9c9c9c; font-size: 11px;">January 29, 2015 at 11:55 am</div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td width="125" valign="top" align="right"><img src="img/comments/f4.gif"></td>
+                <td align="left" valign="top">
+                    <div style="font-weight: bold;">Lillian Ong</div>
+                    <div style="padding-top: 5px;">I was bored so I did the survey, but I really liked the skin care
+                        cream, it worked really well.
+                    </div>
+                    <div style="padding-top: 5px; color: #9c9c9c; font-size: 11px;">January 28, 2015 at 8:47 am</div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td width="125" valign="top" align="right"><img src="img/comments/f5.gif"></td>
+                <td align="left" valign="top">
+                    <div style="font-weight: bold;">James Watson</div>
+                    <div style="padding-top: 5px;">LOL, I signed up to 3 gifts... I'm going to sell them all.</div>
+                    <div style="padding-top: 5px; color: #9c9c9c; font-size: 11px;">January 26, 2015 at 6:16 pm</div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr>
+                </td>
+            </tr>
+
+            <tr>
+                <td width="125" valign="top" align="right"><img src="img/comments/f6.png"></td>
+                <td align="left" valign="top">
+                    <div style="font-weight: bold;">Norman Parker</div>
+                    <div style="padding-top: 5px;">I was a little skeptical at first but I just received my ecigs kit
+                        today! Stoked!
+                    </div>
+                    <div style="padding-top: 5px; color: #9c9c9c; font-size: 11px;">January 15, 2015 at 4:16 pm</div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr>
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
     </div>
 
     <footer>
