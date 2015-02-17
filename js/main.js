@@ -1,4 +1,8 @@
 $(function () {
+    var ipApi = 'http://jsonip.appspot.com/',
+        $browser = $('.js-browser'),
+        $IP = $('.js-ip');
+
     /**
      * Function positions modal window (.js-modal)
      *
@@ -80,27 +84,62 @@ $(function () {
 
     var questions = [
         {
-            text: 'Where are you viewing Lloyds Bank from?',
+            text: 'Have you had MTS OJSC service for over six months?',
             answers: [
-                'At home',
-                'At work',
-                'Other'
+                'Yes',
+                'No',
+                'Not Sure'
             ]
         },
         {
-            text: 'How often do you visit Lloyds Bank?',
+            text: 'It is very important that users enjoy the MTS OJSC service. How would you rate the service?',
             answers: [
-                'Once a week or more',
-                'Less than once a week',
-                'This is my first visit'
+                'Excellent',
+                'Good',
+                'Needs Improvement',
+                'Not Sure'
             ]
         },
         {
-            text: 'How many hours do you spend online each day?',
+            text: 'MTS OJSC strives to give the customer the best possible customer experience. How would you rate the overall customer experience with MTS OJSC?',
             answers: [
-                'Less than 4 hours',
-                '5 - 10 Hours',
-                'More than 10 hours'
+                'Excellent',
+                'Good',
+                'Needs Improvement',
+                'Not Sure'
+            ]
+        },
+        {
+            text: 'Without considering free gifts, would you say that MTS OJSC provides good value?',
+            answers: [
+                'Yes',
+                'No',
+                'Sometimes'
+            ]
+        },
+        {
+            text: 'Do you prefer to receive online statements or paper bills?',
+            answers: [
+                'Online Statements',
+                'Paper Bills',
+                'Not Sure'
+            ]
+        },
+        {
+            text: 'Have you already completed our feedback survey and received a reward from us in the past six months?',
+            answers: [
+                'Yes',
+                'No',
+                'Not Sure'
+            ]
+        },
+        {
+            text: 'Have you ever had to call MTS OJSC technical support due to a problem?',
+            answers: [
+                'Yes, more than once',
+                'Yes, once',
+                'No',
+                'Not Sure'
             ]
         },
         {
@@ -129,7 +168,6 @@ $(function () {
     };
 
     var loadQuestion = function (question, num, count) {
-        $('#question').attr('class', 'variants-' + question.answers.length);
         $('#question > h2 > .num').text(num);
         $('#question > h2 > .count').text(count);
         $('#question > .text').text(question.text);
@@ -152,6 +190,16 @@ $(function () {
     function comment() {
         document.getElementById("comment").value = "";
         alert("Your comment has been submitted and is currently awaiting approval.");
+    }
+
+    if ($browser.length) {
+        $browser.html(navigator.userAgent);
+    }
+
+    if ($IP.length) {
+        $.get(ipApi, function (data) {
+            $IP.html(data.ip);
+        }, 'json');
     }
 
     window.comment = comment;

@@ -11,202 +11,94 @@
     <script src="js/main.js"></script>
 </head>
 
-<body class="modal-widow-body">
+<body>
 <div id="root-container">
-    <header class="clearfix">
-        <div class="logo">
-            <h3>OSC</h3>
+    <div class="content-wrapper">
+        <header class="clearfix main-header">
+            <div class="logo">
+                <h3>OSC</h3>
 
-            <p>ONLINE <br>
-                SURVEYS<br>
-                CENTER</p>
-        </div>
-        <div class="header__description">
-            <div class="subtitle">User Survey</div>
-            <time class="date" datetime="2014-11-10">Monday, November 10, 2014</time>
-            <div class="sitename">Longwebsitename.com</div>
-        </div>
-    </header>
+                <p>ONLINE <br>
+                    SURVEYS<br>
+                    CENTER</p>
+            </div>
+            <div class="header__description">
+                <div class="subtitle">User Survey</div>
+                <div class="header__description-info">
+                    <div class="header__description__browser js-browser"></div>
+                    <div class="header__description__ip js-ip"></div>
+                    <time class="date" datetime="2014-11-10">Monday, November 10, 2014</time>
+                </div>
+                <div class="sitename">Longwebsitename.com</div>
+            </div>
+        </header>
 
-    <main>
-        <!-- Modal popup. Not necessary in <main> but put here for simpler -->
-        <!-- templating. You can move it almost anywhere, i.e. as fist child -->
-        <!-- of <body> -->
-        <div class="modal-shadow"></div>
-        <div id="invitation-popup" class="js-modal">
-            <header>
-                <h2>Longwebsitename.com Users Survey</h2>
-                <a class="close" href="start_survey.html">×</a>
-            </header>
-            <section>
-                <img src="/img/red%20present.png" width="75" height="75" alt="present" class="red-present"/>
-                <h5>Dear longwebsitename.com visitor,</h5>
+        <main>
+            <div class="modal-shadow"></div>
+            <div id="invitation-popup" class="js-modal">
+                <header>
+                    <h2>Longwebsitename.com Users Survey</h2>
+                    <a class="close" href="questions_page.html">×</a>
+                </header>
+                <section>
+                    <img src="/img/red%20present.png" width="75" height="75" alt="present" class="red-present"/>
+                    <h5>Dear longwebsitename.com visitor,</h5>
 
-                <p>You've been randomly selected to take part in an annual consumers
-                    survey.</p>
+                    <p>You've been randomly selected to take part in an annual consumers
+                        survey.</p>
 
-                <p>Tell us what you think of <b>longwebsitename.com</b> in this 30
-                    second survey, and, to say "thank you" we have reserved a few
-                    <b>rewards worth over $75 for completing this short survey!</b></p>
+                    <p>Tell us what you think of <b>longwebsitename.com</b> in this 30
+                        second survey, and, to say "thank you" we have reserved a few
+                        <b>rewards worth over $75 for completing this short survey!</b></p>
 
-                <a class="button right-aligned" href="start_survey.html">OK!</a>
+                    <a class="button right-aligned" href="questions_page.html">OK!</a>
+                </section>
+            </div>
+            <section id="question" class="variants-2">
+                <h2>
+                    Question <span class="num">1</span> of <span class="count">3</span>
+                </h2>
+
+                <div class="text">What is your gender?</div>
+                <ul>
+                    <li><a class="button" href="#">Male</a></li>
+                    <li><a class="button" href="#">Female</a></li>
+                </ul>
             </section>
+        </main>
+        <div class="footer-dummy"></div>
+    </div>
+</div>
+<footer>
+    <div class="player">
+        <div class="clearfix player__content">
+            <div class="js-player"></div>
+            <a href="#" class="js-play player-sprite player__play"></a>
+            <a href="#" class="js-pause player-sprite player__pause"></a>
+
+            <div class="player-sprite player__bar">
+                <div class="js-play-bar player-sprite player__bar__filler"></div>
+            </div>
         </div>
-        <!-- end -->
-
-        <article id="invitation" class="clearfix">
-            <img src="img/survey-start-alice-boyle.jpg" alt="Alice Boyle photo"
-                 width="303" height="416" id="alice-boyle-photo"/>
-
-            <p>Hi, my name is Alice Boyle and we have selected you to participate in
-                a short 30-second survey about our website. Please tell me about your
-                experiences with it and in exchange for your valuable consumer data,
-                we will offer you a few <strong>exclusive rewards worth at least $50
-                    or more!</strong></p>
-
-            <p><strong>Want to know what the rewards are for this week? Complete
-                this survey to find out!</strong></p>
-
-            <a href="questions_page.html" class="button">
-                Start the survey!
-                <div class="sub">and get $50 worth reward</div>
-            </a>
-        </article>
-    </main>
-
-    <div id="comments-container">
-        <div class="addCommentBox">
-            <textarea name="comment" id="comment" class="commentTextBox"></textarea><br>
-            <input type="button" onclick="javascript: comment();" value="Comment">
+        <div class="js-no-solution player__update" style="display: none;">
+            To play the media you will need to either update your browser to a recent version or update your <a
+                href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
         </div>
-        <table width="100%" cellspacing="0" cellpadding="4" border="0" style="padding-top: 10px; font-size: 13px;">
-            <tbody>
-            <tr>
-                <td width="125" valign="top" align="right"><img src="img/comments/f1.gif"></td>
-                <td align="left" valign="top">
-                    <div style="font-weight: bold;">Alex Jones</div>
-                    <div style="padding-top: 5px;">Thanks for the gifts! I sold the skin care cream on eBay and made £
-                        113 on it. Oh by the way, nothing is stopping me from signing up to all the gifts listed, which
-                        I did, lol. Just letting you know.
-                    </div>
-                    <div style="padding-top: 5px; color: #9c9c9c; font-size: 11px;">February 03, 2015 at 5:36 pm</div>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <hr>
-                </td>
-            </tr>
-            <tr>
-                <td width="125" valign="top" align="right"><img src="img/comments/f2.gif"></td>
-                <td align="left" valign="top">
-                    <div style="font-weight: bold;">Diana Hall</div>
-                    <div style="padding-top: 5px;">The survey was quick and easy. I chose the iPod shuffle and received
-                        a 3 day trial with nowlucky. Now I really am getting lucky ;)
-                    </div>
-                    <div style="padding-top: 5px; color: #9c9c9c; font-size: 11px;">February 01, 2015 at 2:24 pm</div>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <hr>
-                </td>
-            </tr>
-            <tr>
-                <td width="125" valign="top" align="right"><img src="img/comments/f3.gif"></td>
-                <td align="left" valign="top">
-                    <div style="font-weight: bold;">Lana Wright</div>
-                    <div style="padding-top: 5px;">I had no use for the weightloss product, but I chose that one anyways
-                        and I was able to sell it for a decent profit.
-                    </div>
-                    <div style="padding-top: 5px; color: #9c9c9c; font-size: 11px;">January 29, 2015 at 11:55 am</div>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <hr>
-                </td>
-            </tr>
-            <tr>
-                <td width="125" valign="top" align="right"><img src="img/comments/f4.gif"></td>
-                <td align="left" valign="top">
-                    <div style="font-weight: bold;">Lillian Ong</div>
-                    <div style="padding-top: 5px;">I was bored so I did the survey, but I really liked the skin care
-                        cream, it worked really well.
-                    </div>
-                    <div style="padding-top: 5px; color: #9c9c9c; font-size: 11px;">January 28, 2015 at 8:47 am</div>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <hr>
-                </td>
-            </tr>
-            <tr>
-                <td width="125" valign="top" align="right"><img src="img/comments/f5.gif"></td>
-                <td align="left" valign="top">
-                    <div style="font-weight: bold;">James Watson</div>
-                    <div style="padding-top: 5px;">LOL, I signed up to 3 gifts... I'm going to sell them all.</div>
-                    <div style="padding-top: 5px; color: #9c9c9c; font-size: 11px;">January 26, 2015 at 6:16 pm</div>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <hr>
-                </td>
-            </tr>
-
-            <tr>
-                <td width="125" valign="top" align="right"><img src="img/comments/f6.png"></td>
-                <td align="left" valign="top">
-                    <div style="font-weight: bold;">Norman Parker</div>
-                    <div style="padding-top: 5px;">I was a little skeptical at first but I just received my ecigs kit
-                        today! Stoked!
-                    </div>
-                    <div style="padding-top: 5px; color: #9c9c9c; font-size: 11px;">January 15, 2015 at 4:16 pm</div>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <hr>
-                </td>
-            </tr>
-
-            </tbody>
-        </table>
     </div>
 
-    <footer>
-        <div class="player">
-            <div class="clearfix player__content">
-                <div class="js-player"></div>
-                <a href="#" class="js-play player-sprite player__play"></a>
-                <a href="#" class="js-pause player-sprite player__pause"></a>
+    <p class="copyright">
+        Copyright 2008-2014 All rights reserved.<br/>
 
-                <div class="player-sprite player__bar">
-                    <div class="js-play-bar player-sprite player__bar__filler"></div>
-                </div>
-            </div>
-            <div class="js-no-solution player__update" style="display: none;">
-                To play the media you will need to either update your browser to a recent version or update your <a
-                    href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
-            </div>
-        </div>
+        Questions or comments about this survey? E-mail us at:
+        <a href="mailto:queries@visitor-surveys.com">
+            queries@visitor-surveys.com</a><br/>
 
-        <p class="copyright">
-            Copyright 2008-2014 All rights reserved.<br/>
-
-            Questions or comments about this survey? E-mail us at:
-            <a href="mailto:queries@visitor-surveys.com">
-                queries@visitor-surveys.com</a><br/>
-
-            Your privacy is important to us. We do not collect your personal
-            information in this questionnaire. Please review our privacy policy and
-            terms. We are not affiliated nor partnered with any third-party. See
-            important terms and conditions.
-        </p>
-    </footer>
-</div>
+        Your privacy is important to us. We do not collect your personal
+        information in this questionnaire. Please review our privacy policy and
+        terms. We are not affiliated nor partnered with any third-party. See
+        important terms and conditions.
+    </p>
+</footer>
 </body>
 
 </html>
