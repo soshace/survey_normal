@@ -281,7 +281,8 @@ main p {
 #question {
     text-align: center;
     float: left;
-    width: 400px;
+    width: 440px;
+    padding-left: 10px;
 }
 
 #question > h2 {
@@ -549,6 +550,6 @@ a.button.right-aligned {
 }
 
 #map-canvas {
-    width: 500px;
+    width: 450px;
     height: 300px;
 }
