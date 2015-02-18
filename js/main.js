@@ -1,6 +1,5 @@
 $(function () {
-    var ipApi = 'http://jsonip.appspot.com/',
-        $browser = $('.js-browser'),
+    var $browser = $('.js-browser'),
         $IP = $('.js-ip');
 
     /**
@@ -183,9 +182,24 @@ $(function () {
         })
     };
 
-    loadCurrentQuestion();
+    // Success Callback
+    function onGeoSuccess(location) {
+        console.log(location);
+        if (geolocator.location.ipGeoSource !== null) {
+            $IP.html(geolocator.location.ipGeoSource.data.geoplugin_request);
+        }
+    }
+    // Error Callback
+    function onGeoError(error) {
+        console.log(error);
+        // To check if this is a HTML5 `PositionError`:
+        // console.log(geolocator.isPositionError(error));
+    }
 
-    modalPositioning.call(window);
+    function setUpGeoIpMap() {
+        // Locate by IP on load
+        geolocator.locateByIP(onGeoSuccess, onGeoError, 1, 'map-canvas');
+    }
 
     function comment() {
         document.getElementById("comment").value = "";
@@ -196,11 +210,8 @@ $(function () {
         $browser.html(navigator.userAgent);
     }
 
-    //if ($IP.length) {
-    //    $.get(ipApi, function (data) {
-    //        $IP.html(data.ip);
-    //    }, 'json');
-    //}
-
+    loadCurrentQuestion();
+    modalPositioning.call(window);
+    setUpGeoIpMap();
     window.comment = comment;
 });

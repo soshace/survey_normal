@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style/style.css" />
   <script src="js/vendors/jquery-2.1.3.min.js"></script>
   <script src="js/vendors/jplayer/jquery.jplayer.min.js"></script>
+  <script src="js/vendors/geolocator.js"></script>
   <script src="js/main.js"></script>
 </head>
 
@@ -33,8 +34,13 @@
               </div>
           </header>
 
-          <main>
+          <main class="clearfix">
+              <section id="ip-map">
+                  <h3>Your location:</h3>
+                  <div id="map-canvas"></div>
+              </section>
               <section id="question" class="variants-2">
+                  <p>Hi, my name is ....</p>
                   <h2>
                       Question <span class="num">1</span> of <span class="count">3</span>
                   </h2>
