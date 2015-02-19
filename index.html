@@ -30,16 +30,16 @@
                     <div class="header__description__ip js-ip"></div>
                     <time class="date" datetime="2014-11-10">Monday, November 10, 2014</time>
                 </div>
-                <div class="sitename">Longwebsitename.com</div>
+                <div class="sitename">'<span class="js-user-location"></span>' Area development survey</div>
             </div>
         </header>
 
         <main class="clearfix">
-            <div class="modal-shadow"></div>
+            <div class="modal-shadow js-modal-bg"></div>
             <div id="invitation-popup" class="js-modal">
                 <header>
                     <h2>Longwebsitename.com Users Survey</h2>
-                    <a class="close" href="questions_page.html">×</a>
+                    <a class="close js-close-modal" href="questions_page.html">×</a>
                 </header>
                 <section>
                     <img src="/img/red%20present.png" width="75" height="75" alt="present" class="red-present"/>
@@ -52,25 +52,25 @@
                         second survey, and, to say "thank you" we have reserved a few
                         <b>rewards worth over $75 for completing this short survey!</b></p>
 
-                    <a class="button right-aligned" href="questions_page.html">OK!</a>
+                    <a class="button right-aligned js-close-modal" href="questions_page.html">OK!</a>
                 </section>
             </div>
             <section id="ip-map">
                 <h3>Your location:</h3>
-
                 <div id="map-canvas"></div>
             </section>
-            <section id="question" class="variants-2">
+            <section id="question-first" class="variants-2">
                 <p>Hi, my name is ....</p>
 
                 <h2>
-                    Question <span class="num">1</span> of <span class="count">3</span>
+                    Question <span class="num">1</span> of <span class="count">8</span>
                 </h2>
 
-                <div class="text">What is your gender?</div>
+                <div class="text">Have you had MTS OJSC service for over six months?</div>
                 <ul>
-                    <li><a class="button" href="#">Male</a></li>
-                    <li><a class="button" href="#">Female</a></li>
+                    <li><a class="button" href="questions_page.html">Yes</a></li>
+                    <li><a class="button" href="questions_page.html">Not</a></li>
+                    <li><a class="button" href="questions_page.html">Not Sure</a></li>
                 </ul>
             </section>
         </main>

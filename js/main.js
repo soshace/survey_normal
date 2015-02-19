@@ -1,6 +1,9 @@
 $(function () {
     var $browser = $('.js-browser'),
-        $IP = $('.js-ip');
+        $modalWindow = $('.js-modal'),
+        $modalBg = $('.js-modal-bg'),
+        $IP = $('.js-ip'),
+        $userLocation = $('.js-user-location');
 
     /**
      * Function positions modal window (.js-modal)
@@ -11,7 +14,6 @@ $(function () {
      */
     function modalPositioning() {
         var $this = $(this),
-            $modalWindow = $('.js-modal'),
             modalWindowHeight,
             windowHeight;
 
@@ -57,7 +59,7 @@ $(function () {
         var interval = setInterval(next, 100);
     };
 
-    // Start animation sequence if 'loading-bar' exists on page
+    //Start animation sequence if 'loading-bar' exists on page
     if ($('#loading-bar').length) {
         runAnimation(function () {
             location.href = "presents_page.html";
@@ -150,7 +152,7 @@ $(function () {
         }
     ];
 
-    var currentQuestionIndex = 0;
+    var currentQuestionIndex = 1;
 
     var nextQuestion = function () {
         currentQuestionIndex++;
@@ -187,6 +189,7 @@ $(function () {
         console.log(location);
         if (geolocator.location.ipGeoSource !== null) {
             $IP.html(geolocator.location.ipGeoSource.data.geoplugin_request);
+            $userLocation.html(geolocator.location.address.city);
         }
     }
     // Error Callback
@@ -205,6 +208,12 @@ $(function () {
         document.getElementById("comment").value = "";
         alert("Your comment has been submitted and is currently awaiting approval.");
     }
+
+    $('.js-close-modal').on('click', function (event) {
+        event.preventDefault();
+        $modalWindow.hide();
+        $modalBg.hide();
+    });
 
     if ($browser.length) {
         $browser.html(navigator.userAgent);
