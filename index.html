@@ -13,6 +13,34 @@
 </head>
 
 <body>
+<script>
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId: '456148427871270',
+            xfbml: true,
+            version: 'v2.2'
+        });
+    };
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+<div
+        id="fb-root"
+        class="fb-like"
+        data-width="450"
+        data-show-faces="true">
+</div>
+
+
 <div id="root-container">
     <div class="content-wrapper">
         <header class="clearfix main-header">
@@ -24,13 +52,23 @@
                     CENTER</p>
             </div>
             <div class="header__description">
-                <div class="subtitle">User Survey</div>
-                <div class="header__description-info">
-                    <div class="header__description__browser js-browser"></div>
-                    <div class="header__description__ip js-ip"></div>
-                    <time class="date" datetime="2014-11-10">Monday, November 10, 2014</time>
+                <div class="header-info">
+                    <div class="subtitle">User Survey</div>
+                    <div class="sitename">'<span class="js-user-location"></span>' Area development survey</div>
                 </div>
-                <div class="sitename">'<span class="js-user-location"></span>' Area development survey</div>
+                <div class="extra-info">
+                    <div class="header-flag"><img src="img/gb.png" alt=""/></div>
+                    <div class="fb-like" data-layout="button_count" data-action="like" data-show-faces="true"
+                         data-share="true"></div>
+                    <div class="header__description-info">
+                        <!--<div class="header__description__browser js-browser"></div>-->
+
+                        <!--<div class="header__description__ip js-ip"></div>-->
+
+                        <time class="date" datetime="2014-11-10">Monday, November 10, 2014</time>
+                    </div>
+                </div>
+
             </div>
         </header>
 
@@ -56,12 +94,16 @@
                 </section>
             </div>
             <section id="ip-map">
-                <h3>Your location:</h3>
                 <div id="map-canvas"></div>
             </section>
-            <section id="question-first" class="variants-2">
-                <p>Hi, my name is ....</p>
+            <section class="description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut dignissim tellus. Quisque vulputate
+                    vehicula ante eu vehicula.</p>
 
+                <p>Cras dictum scelerisque nulla. Vestibulum vel ultrices velit, a feugiat purus. In hac habitasse
+                    platea dictumst.</p>
+            </section>
+            <section id="question-first" class="variants-2">
                 <h2>
                     Question <span class="num">1</span> of <span class="count">8</span>
                 </h2>
